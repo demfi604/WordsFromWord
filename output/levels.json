@@ -53,6 +53,10 @@
         {
           "text": "ТРОС",
           "hint": ""
+        },
+        {
+          "text": "РОСА",
+          "hint": ""
         }
       ]
     },
@@ -100,6 +104,98 @@
         },
         {
           "text": "НОС",
+          "hint": ""
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "mainWord": "КОТЁНОК",
+      "difficulty": "EASY",
+      "minWordsToPass": 4,
+      "subWords": [
+        {
+          "text": "ТОН",
+          "hint": ""
+        },
+        {
+          "text": "КОТ",
+          "hint": ""
+        },
+        {
+          "text": "ТОК",
+          "hint": ""
+        },
+        {
+          "text": "КТО",
+          "hint": ""
+        },
+        {
+          "text": "ОКНО",
+          "hint": ""
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "mainWord": "СТРОКА",
+      "difficulty": "EASY",
+      "minWordsToPass": 4,
+      "subWords": [
+        {
+          "text": "РОСТ",
+          "hint": ""
+        },
+        {
+          "text": "СОРТ",
+          "hint": ""
+        },
+        {
+          "text": "ТРОС",
+          "hint": ""
+        },
+        {
+          "text": "КОТ",
+          "hint": ""
+        },
+        {
+          "text": "ТОК",
+          "hint": ""
+        },
+        {
+          "text": "КТО",
+          "hint": ""
+        },
+        {
+          "text": "АКТ",
+          "hint": ""
+        },
+        {
+          "text": "КАРТ",
+          "hint": ""
+        },
+        {
+          "text": "КОРА",
+          "hint": ""
+        },
+        {
+          "text": "КОСА",
+          "hint": ""
+        },
+        {
+          "text": "КРОТ",
+          "hint": ""
+        },
+        {
+          "text": "РОСА",
+          "hint": ""
+        },
+        {
+          "text": "СКАТ",
+          "hint": ""
+        },
+        {
+          "text": "ТОСКА",
           "hint": ""
         }
       ]

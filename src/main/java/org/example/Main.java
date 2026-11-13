@@ -49,6 +49,15 @@ public class Main {
         LevelsOutput out = generator.generate(bigDictionary, Collections.singletonList("КОТЁНОК"), config);
         long end = System.currentTimeMillis();
 
+//        List<String> manyMainWords = new ArrayList<>(1000);
+//        for (int i = 0; i < 1000; i++) {
+//            manyMainWords.add("КОТЁНОК" + i);
+//        }
+//
+//        long start = System.currentTimeMillis();
+//        LevelsOutput out = generator.generate(bigDictionary, manyMainWords, config);
+//        long end = System.currentTimeMillis();
+
         System.out.println("\n=== ТЕСТ ПРОИЗВОДИТЕЛЬНОСТИ ===");
         System.out.println("Слов в словаре: " + bigDictionary.size());
         System.out.println("Время выполнения: " + (end - start) + " мс");
