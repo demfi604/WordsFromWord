@@ -17,6 +17,13 @@ The program reads a word dictionary, a list of target main words, and difficulty
 <!-- Список основных возможностей и правил работы программы -->
 
 ## Tech Stack & Requirements
+To build and run this project, you need the following tools and libraries:
+- **Java Development Kit (JDK):** Java 8 (version 1.8)
+- **Build Tool:** Apache Maven (or the included Maven Wrapper `./mvnw`)
+- **IDE:** IntelliJ IDEA (recommended)
+- **Libraries & Dependencies:**
+    - `com.google.code.gson:gson:2.10.1` — for JSON parsing and serialization
+    - `junit:junit:4.13.2` — for unit testing
 <!-- Необходимые инструменты: версия Java, система сборки (Maven), библиотеки и IDE -->
 
 ## Project Structure
