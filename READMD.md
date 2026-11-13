@@ -108,6 +108,21 @@ The screenshot below illustrates the complete project architecture in IntelliJ I
 <!-- Примеры входных данных (JSON) и результата работы программы -->
 
 ## Screenshots
+### 1. Generation Results & Performance Benchmark (`Main.java`)
+The screenshots below demonstrate the complete JSON output generated for the main words (`ДЕМОНСТРАЦИЯ`, `ВЗАИМНОСТЬ`, `ТЁМНОСТЬ`), automatic saving to `output/levels.json`, and the performance benchmark on 100,004 dictionary words (**44 ms**):
+
+![Generation Result Part 1](Screenshots/result_1.png)
+
+![Generation Result Part 2](Screenshots/result_2.png)
+
+![Generation Result Part 3](Screenshots/result_3.png)
+
+![Generation Result Part 4](Screenshots/result_4.png)
+
+### 2. Functional & Edge-Case Tests (`[Test 1]` – `[Test 9]`)
+Execution log verifying all 9 test scenarios: repeated letters, letter frequency limits, exclusion of the main word, duplicate removal, minimum word length filtering, Russian `Ё` handling, empty results, pass thresholds, and large dictionary performance:
+
+![All 9 Test Scenarios Execution](Screenshots/test.png)
 <!-- Скриншоты запуска программы в консоли и прохождения тестов -->
 
 ## Known Limitations
