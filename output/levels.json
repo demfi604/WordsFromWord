@@ -1,0 +1,108 @@
+{
+  "levels": [
+    {
+      "id": 1,
+      "mainWord": "ДЕМОНСТРАЦИЯ",
+      "difficulty": "HARD",
+      "minWordsToPass": 4,
+      "subWords": [
+        {
+          "text": "ДЕСАНТ",
+          "hint": ""
+        },
+        {
+          "text": "АДРЕС",
+          "hint": ""
+        },
+        {
+          "text": "АРМИЯ",
+          "hint": ""
+        },
+        {
+          "text": "МЕСТО",
+          "hint": ""
+        },
+        {
+          "text": "МЕТРО",
+          "hint": ""
+        },
+        {
+          "text": "МОСТ",
+          "hint": ""
+        },
+        {
+          "text": "СОН",
+          "hint": ""
+        },
+        {
+          "text": "ТОН",
+          "hint": ""
+        },
+        {
+          "text": "НОС",
+          "hint": ""
+        },
+        {
+          "text": "РОСТ",
+          "hint": ""
+        },
+        {
+          "text": "СОРТ",
+          "hint": ""
+        },
+        {
+          "text": "ТРОС",
+          "hint": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "mainWord": "ВЗАИМНОСТЬ",
+      "difficulty": "MEDIUM",
+      "minWordsToPass": 4,
+      "subWords": [
+        {
+          "text": "МОСТ",
+          "hint": ""
+        },
+        {
+          "text": "СОН",
+          "hint": ""
+        },
+        {
+          "text": "ТОН",
+          "hint": ""
+        },
+        {
+          "text": "НОС",
+          "hint": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "mainWord": "ТЁМНОСТЬ",
+      "difficulty": "MEDIUM",
+      "minWordsToPass": 4,
+      "subWords": [
+        {
+          "text": "МОСТ",
+          "hint": ""
+        },
+        {
+          "text": "СОН",
+          "hint": ""
+        },
+        {
+          "text": "ТОН",
+          "hint": ""
+        },
+        {
+          "text": "НОС",
+          "hint": ""
+        }
+      ]
+    }
+  ]
+}

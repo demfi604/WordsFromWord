@@ -1,0 +1,10 @@
+{
+  "minSubWordLength": 3,
+  "minWordsToPass": 4,
+  "difficultyThresholds": {
+    "easyMaxMainWordLength": 7,
+    "mediumMaxMainWordLength": 10,
+    "easyMaxSubWords": 15,
+    "mediumMaxSubWords": 30
+  }
+}
