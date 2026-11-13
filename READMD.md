@@ -41,8 +41,69 @@ The screenshot below illustrates the complete project architecture in IntelliJ I
 4. Open `src/main/java/org/example/Main.java` and click the green **Run** button (`Shift + F10`). The generated levels will appear in the console and be saved to `output/levels.json`.
 5. To execute unit tests, open `src/test/java/LevelGeneratorTest.java` and click **Run**.
 
-
 ## Input & Output Examples
+
+### Input Files (`input/`)
+
+**1. `input/config.json` (Generation & Difficulty Rules):**
+```json
+{
+  "minSubWordLength": 3,
+  "minWordsToPass": 4,
+  "difficultyThresholds": {
+    "easyMaxMainWordLength": 7,
+    "mediumMaxMainWordLength": 10,
+    "easyMaxSubWords": 15,
+    "mediumMaxSubWords": 30
+  }
+}
+```
+
+**2. `input/dictionary.json` (Source Dictionary):**
+```json
+[
+  "десант", "АДРЕС", "армия", "место", "метро",
+  "десант", "ад", "ДЕМОНСТРАЦИЯ", "мама",
+  "тётя", "ёлка", "мост", "сон", "тон", "нос", "рост", "сорт", "трос"
+]
+```
+
+**3. `input/main_words.json` (Target Main Words):**
+```json
+[
+  "ДЕМОНСТРАЦИЯ",
+  "ВЗАИМНОСТЬ",
+  "ТЁМНОСТЬ"
+]
+```
+
+### Output File (`output/levels.json`)
+```json
+{
+  "levels": [
+    {
+      "id": 1,
+      "mainWord": "ДЕМОНСТРАЦИЯ",
+      "difficulty": "HARD",
+      "minWordsToPass": 4,
+      "subWords": [
+        { "text": "ДЕСАНТ", "hint": "" },
+        { "text": "АДРЕС", "hint": "" },
+        { "text": "АРМИЯ", "hint": "" },
+        { "text": "МЕСТО", "hint": "" },
+        { "text": "МЕТРО", "hint": "" },
+        { "text": "МОСТ", "hint": "" },
+        { "text": "СОН", "hint": "" },
+        { "text": "ТОН", "hint": "" },
+        { "text": "НОС", "hint": "" },
+        { "text": "РОСТ", "hint": "" },
+        { "text": "СОРТ", "hint": "" },
+        { "text": "ТРОС", "hint": "" }
+      ]
+    }
+  ]
+}
+```
 <!-- Примеры входных данных (JSON) и результата работы программы -->
 
 ## Screenshots
