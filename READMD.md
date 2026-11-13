@@ -34,7 +34,7 @@ The screenshot below illustrates the complete project architecture in IntelliJ I
 ## Installation & How to Run
 1. Clone or download the repository to your computer:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/demfi604/WordsFromWord
    ```
 2. Open the `WordsFromWord` folder in **IntelliJ IDEA**.
 3. Wait a few seconds for **Maven** to download dependencies (`Gson` and `JUnit`), or press `Ctrl + Shift + O` to reload `pom.xml`.
