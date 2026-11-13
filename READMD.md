@@ -126,7 +126,14 @@ Execution log verifying all 9 test scenarios: repeated letters, letter frequency
 <!-- Скриншоты запуска программы в консоли и прохождения тестов -->
 
 ## Known Limitations
+- **Russian Letter `Ё` vs `Е`:** The generator treats `Ё` and `Е` as distinct characters, so words written with `Е` in the dictionary will not match `Ё` in a main word.
+- **Full Dictionary Scan per Main Word (`O(N × M)` Complexity):** For each main word, the algorithm scans the entire dictionary from scratch and allocates a new `HashMap` for every candidate word. While processing 100,000 dictionary words for a single main word takes around 30–44 ms, generating levels for 5,000 main words would take over a minute.
+- **Empty Hints:** The `hint` field for each generated sub-word defaults to an empty string (`""`), as the input dictionary does not contain word definitions.
 <!-- Слабые места и ограничения алгоритма (например, буква Ё/Е, зависимость от словаря) -->
 
 ## Authors / Team
+Authors: Мс.Борик и Мс.Каштан
+(Кадоркин и Фролов)
+
+Team: "Ответственные за павидло в пряниках"
 <!-- Имена и роли участников команды -->
