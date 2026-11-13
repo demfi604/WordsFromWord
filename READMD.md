@@ -45,6 +45,7 @@ The screenshot below illustrates the complete project architecture in IntelliJ I
 
 ### Input Files (`input/`)
 
+
 **1. `input/config.json` (Generation & Difficulty Rules):**
 ```json
 {
