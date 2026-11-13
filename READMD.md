@@ -1,6 +1,7 @@
-# Project Title
+# WordsFromWord
 
 ## Overview / Description
+
 <!-- Краткое описание проекта: что это за программа и для какой игры/задачи она создана -->
 
 ## Key Features
