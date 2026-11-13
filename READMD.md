@@ -27,6 +27,8 @@ To build and run this project, you need the following tools and libraries:
 <!-- Необходимые инструменты: версия Java, система сборки (Maven), библиотеки и IDE -->
 
 ## Project Structure
+The screenshot below illustrates the complete project architecture in IntelliJ IDEA, including Maven dependencies (`Gson 2.10.1`, `JUnit 4.13.2`), input/output JSON directories, and separated `model`, `service`, and `util` packages:
+![Console Output](Screenshots/Project.png)
 <!-- Дерево папок и описание назначения каждого пакета/файла -->
 
 ## Installation & How to Run
