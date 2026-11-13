@@ -32,7 +32,15 @@ The screenshot below illustrates the complete project architecture in IntelliJ I
 <!-- Дерево папок и описание назначения каждого пакета/файла -->
 
 ## Installation & How to Run
-<!-- Пошаговая инструкция: как скачать, собрать и запустить программу и тесты -->
+1. Clone or download the repository to your computer:
+   ```bash
+   git clone https://github.com
+   ```
+2. Open the `WordsFromWord` folder in **IntelliJ IDEA**.
+3. Wait a few seconds for **Maven** to download dependencies (`Gson` and `JUnit`), or press `Ctrl + Shift + O` to reload `pom.xml`.
+4. Open `src/main/java/org/example/Main.java` and click the green **Run** button (`Shift + F10`). The generated levels will appear in the console and be saved to `output/levels.json`.
+5. To execute unit tests, open `src/test/java/LevelGeneratorTest.java` and click **Run**.
+
 
 ## Input & Output Examples
 <!-- Примеры входных данных (JSON) и результата работы программы -->
