@@ -1,7 +1,9 @@
 # WordsFromWord
 
 ## Overview / Description
+**WordsFromWord — Level Generator** is a Java 8 console application designed to automatically generate game levels for the word puzzle *"Words from Word"* (also known as *"Anagrams"* or *"Wordscapes"*).
 
+The program reads a word dictionary, a list of target main words, and difficulty rules from JSON files, filters valid sub-words based on strict letter frequency validation, and exports structured game levels to `output/levels.json`.
 <!-- Краткое описание проекта: что это за программа и для какой игры/задачи она создана -->
 
 ## Key Features
