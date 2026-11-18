@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import org.example.GameModels.Config;
 import org.example.GameModels.LevelsOutput;
+import org.example.GameModels.Level;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -12,8 +13,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        LevelService service = new LevelService();
         Gson gson = new GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create();
+        LevelService service = new LevelService();
 
         Config config = service.readConfig("input/config.json");
         List<String> dictionary = service.readWords("input/dictionary.json");
@@ -23,14 +24,17 @@ public class Main {
         LevelsOutput result = service.buildLevels(dictionary, mainWords, config);
         long end = System.currentTimeMillis();
 
+        service.writeOutput("output/levels.json", result);
+
         System.out.println(gson.toJson(result));
         System.out.println("Время генерации: " + (end - start) + " мс");
-
-        service.writeOutput("output/levels.json", result);
+        System.out.println("=== СТАТИСТИКА ПО УРОВНЯМ ===");
+        for (Level lvl : result.levels) {
+            System.out.println("Уровень " + lvl.id + " (" + lvl.mainWord + ") — сложность: " + lvl.difficulty + ", кол-во подслов: " + lvl.subWords.size());
+        }
 
         runPerformanceTest(service, config);
     }
-
     private static void runPerformanceTest(LevelService service, Config config) {
         List<String> bigDictionary = new ArrayList<>(100_000);
         for (int i = 0; i < 100_000; i++) {
@@ -48,7 +52,7 @@ public class Main {
 //        }
 //
 //        long start = System.currentTimeMillis();
-//        LevelsOutput out = generator.generate(bigDictionary, manyMainWords, config);
+//        LevelsOutput out = service.buildLevels(bigDictionary, manyMainWords, config);
 //        long end = System.currentTimeMillis();
 
         System.out.println("\n=== ТЕСТ ПРОИЗВОДИТЕЛЬНОСТИ ===");
@@ -59,12 +63,4 @@ public class Main {
 }
 
 
-//        List<String> manyMainWords = new ArrayList<>(1000);
-//        for (int i = 0; i < 1000; i++) {
-//            manyMainWords.add("КОТЁНОК" + i);
-//        }
-//
-//        long start = System.currentTimeMillis();
-//        LevelsOutput out = generator.generate(bigDictionary, manyMainWords, config);
-//        long end = System.currentTimeMillis();
 
